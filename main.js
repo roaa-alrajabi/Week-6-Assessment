@@ -38,9 +38,12 @@ Ex: addKeyPowerIndex(arrOfObj2)
 ]   
 */
 
-function addKeyPowerIndex() {
-  // WRITE YOUR CODE UNDER THIS LINE  
-
+function addKeyPowerIndex(arr) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+  
+ //create  new array
+ //create foreche to etration  in arr 
+ // push arr[key]= arr[value]*0
 }
 
 
@@ -64,10 +67,16 @@ Ex: decreseBy(arrOfNum1,-6)
 => [83, 11, 39]
 */
 
-function decreseBy() {
+var arrOfNum1 = [77,5,33]
+function decreseBy(arr,num) {
   // WRITE YOUR CODE UNDER THIS LINE 
-
+    
+  var Newarr =arr.map(element, indexe, arr)
+   return   arr[indexe]-num
 }
+return Newarr
+
+
 
 
 
@@ -102,8 +111,25 @@ Ex: nameLongerThan(arrOfObj4,6)
 ]
 */
 
-function nameLongerThan() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfObj4 = [
+  { name: "alex" },
+  { name: "mercer"},
+  { name: "alice" },
+  { name: "zaheer"},
+  { name: "elizabeth"}
+]
+
+function nameLongerThan(arr,num) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+  var longer= (arr[0].name).length
+  var result = arr.filter(element)
+
+    for( var i=0 ;i<num ;i++)
+     if(longer<(element.name).length)
+     {
+       longer= element.name
+     }
+     return result 
 }
 
 
@@ -133,9 +159,22 @@ Ex: avgLength(arrOfObj4,"food")
 => 6.8
 */
 
-function avgLength() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-
+var arrOfObj4 = [
+  { name: "alex", food: "fried chiken" },
+  { name: "mercer", food: "pizaa" },
+  { name: "alice", food: "burger" },
+  { name: "zaheer", food: "hot dog" },
+  { name: "elizabeth", food: "eggs" }
+]
+function avgLength(arr, key) {
+  // WRITE YOUR CODE UNDER THIS LINE    
+  var result= arr.reduce (function(acc,element){ 
+    
+     var n= acc+(element.name).length
+     return n
+    
+  })
+  return result/(arr[key].length )
 }
 
 // Good luck :)
